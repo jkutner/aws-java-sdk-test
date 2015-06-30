@@ -99,6 +99,7 @@ public class Main {
       SchemeRegistry sr = connectionManager.getSchemeRegistry();
       sr.register(http);
       sr.register(https);
+      System.out.println("Success");
     } catch (NoSuchAlgorithmException e) {
       throw new AmazonClientException("Unable to access default SSL context", e);
     }
